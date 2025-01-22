@@ -6,6 +6,9 @@ import { IoMdAddCircleOutline } from "react-icons/io";
 import { FaHouse } from "react-icons/fa6";
 import { IoSearch } from "react-icons/io5";
 import { IoMdSettings } from "react-icons/io";
+import { GiMountaintop } from "react-icons/gi"
+import { FaHiking } from 'react-icons/fa';
+
 
 const Navbar = () => {
 
@@ -29,6 +32,8 @@ const Navbar = () => {
                     <Text onClick={handleNavigateUser}><IoPersonOutline size='20px' /></Text>
                     <Text onClick={(route) => handleNavigate('create/post')}><IoMdAddCircleOutline size='22px' /></Text>
                     <Text onClick={(route) => handleNavigate('')}><FaHouse size='20px' /></Text>
+                    <Text onClick={(route) => handleNavigate('trails')}><GiMountaintop size='20px' /></Text>
+                    <Text onClick={(route) => handleNavigate('tours')}><FaHiking size='20px' /></Text>
                     <Text onClick={(route) => handleNavigate('search')}><IoSearch size='20px' /></Text>
                     <Text onClick={(route) => handleNavigate('settings')}><IoMdSettings size='20px' /></Text>
 
